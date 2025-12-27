@@ -1,8 +1,13 @@
 import React from 'react'
+import Nav1 from './Nav1'
+import Intro from './Intro'
 
 const section1 = () => {
   return (
-    <div>section1</div>
+    <div>
+      <Nav1/>
+      <Intro/>
+    </div>
   )
 }
 
