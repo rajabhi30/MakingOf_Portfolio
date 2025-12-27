@@ -13,16 +13,16 @@ const Intro = () => {
            </div>
 
              <div className='flex gap-5 relative top-25'>
-                <div className='w-10 h-10 flex justify-center items-center border-1 hover:bg-black hover:text-white rounded-md'>
+                <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-github-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border-1  hover:bg-black hover:text-white rounded-md'>
+                 <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-linkedin-box-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border-1  hover:bg-black hover:text-white rounded-md'>
+                 <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-mail-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border-1  hover:bg-black hover:text-white rounded-md'>
+                 <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
                    <i class="ri-whatsapp-fill"></i>
                  </div>
              </div>
