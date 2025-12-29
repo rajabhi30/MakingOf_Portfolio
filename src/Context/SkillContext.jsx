@@ -68,10 +68,37 @@ export const scontext=createContext();
         }
     ]
 
+    const projects=[
+        {
+            img:"https://images.unsplash.com/photo-1622630998477-20aa696ecb05?q=80&w=1246&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title:"Application number1",
+            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
+            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+        },
+         {
+            img:"https://plus.unsplash.com/premium_photo-1675055730251-9f3990f1f9d5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title:"Application number1",
+            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
+            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+        },
+        {
+            img:"https://images.unsplash.com/photo-1622630998477-20aa696ecb05?q=80&w=1246&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title:"Application number1",
+            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
+            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+        },
+         {
+            img:"https://plus.unsplash.com/premium_photo-1675055730251-9f3990f1f9d5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title:"Application number1",
+            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
+            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+        }
+    ]
+
 const SkillContext = (props) => {
   return (
     <div>
-        <scontext.Provider value={{skills,experience}}>
+        <scontext.Provider value={{skills,experience,projects}}>
             {props.children}
         </scontext.Provider>
     </div>
