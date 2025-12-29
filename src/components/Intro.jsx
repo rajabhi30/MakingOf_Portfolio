@@ -13,18 +13,26 @@ const Intro = () => {
            </div>
 
              <div className='flex gap-5 relative top-25'>
-                <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+                <a href="https://github.com/rajabhi30" target='_blank'>
+                  <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-github-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+                </a>
+                 <a href="https://www.linkedin.com/in/abhishek-kumar1226/" target='_blank'>
+                  <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-linkedin-box-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
+                 </a>
+                <a href="mailto:rajabhishek8070@gmail.com">
+                   <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
                     <i class="ri-mail-fill"></i>
                  </div>
-                 <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
+                </a>
+                 <a href="https://wa.me/8709291785" target='_blank' rel="noopener noreferrer">
+                  <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
                    <i class="ri-whatsapp-fill"></i>
                  </div>
+                 </a>
              </div>
     
          </div>

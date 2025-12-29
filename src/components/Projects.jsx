@@ -8,7 +8,7 @@ import { scontext } from '../Context/SkillContext'
 const Projects = () => {
     const { projects } = useContext(scontext)
     return (
-        <div className='bg-black h-auto w-full text-white flex flex-col items-center py-5 px-14 overflow-auto'>
+        <div className='bg-black h-auto w-full text-white flex flex-col items-center py-5 px-14 overflow-auto' id="project">
             <div className='text-4xl'>My <span className='font-bold'>Projects</span></div>
             <div className='w-full h-[50%] mt-5 '>
                 {projects.map((pro, index) => {

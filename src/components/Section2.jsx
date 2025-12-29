@@ -7,7 +7,7 @@ const Section2 = () => {
   const { skills, experience } = useContext(scontext)
 
   return (
-    <div className="h-screen py-5 px-14">
+    <div className="h-screen py-5 px-14" id="skill">
 
       <div className="flex justify-center text-4xl gap-3">
         My <span className="font-bold">Skills</span>

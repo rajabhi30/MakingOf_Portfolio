@@ -3,7 +3,7 @@ import about from '../assets/About.png'
 
 const Section4 = () => {
   return (
-    <div className='bg-white h-screen flex overflow-hidden'>
+    <div className='bg-white h-screen flex overflow-hidden' id="me">
 
       <div className='h-full w-[45%] flex justify-center items-center mt-15'>
         <img src={about} alt="" className='h-[90%]'/>

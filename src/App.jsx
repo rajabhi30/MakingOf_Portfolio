@@ -4,14 +4,29 @@ import Section2 from './components/Section2'
 import Section3 from './components/Section3'
 import Section4 from './components/Section4'
 import Projects from './components/Projects'
+import { Route, Routes } from 'react-router-dom'
+import Contact from './components/Contact'
 const App = () => {
   return (
+
+
+
     <div className='font-sans h-screen'>
-        <Section1/>
-        <Section2/>
-        <Section3/>
-        <Section4/>
-        <Projects/>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Section1 />
+              <Section2 />
+              <Section3 />
+              <Section4 />
+              <Projects />
+            </>
+          }
+        />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   )
 }
