@@ -1,5 +1,9 @@
 import React, { Children, createContext } from 'react'
 export const scontext=createContext();
+import Project1 from '../assets/Project1.png'
+import project2 from '../assets/Project2.png'
+import project3 from '../assets/Project3.png'
+import project4 from '../assets/Project4.png'
 
 
  const skills=[
@@ -14,11 +18,6 @@ export const scontext=createContext();
         },
 
          {
-            name:"Html",
-            logo:<i class="ri-html5-fill"></i>
-        },
-
-         {
             name:"Tailwind",
             logo:<i class="ri-tailwind-css-fill"></i>
         },
@@ -29,20 +28,25 @@ export const scontext=createContext();
         },
 
          {
+            name:"Html",
+            logo:<i class="ri-html5-fill"></i>
+        },
+
+         {
             name:"Css",
             logo:<i class="ri-css3-fill"></i>
         },
 
-
+         {
+            name:"Git",
+            logo:<i class="ri-git-branch-fill"></i>
+        },
+        
          {
             name:"Github",
             logo:<i class="ri-github-fill"></i>
         },
 
-        {
-            name:"Git",
-            logo:<i class="ri-git-branch-fill"></i>
-        },
 
     ]
 
@@ -70,28 +74,28 @@ export const scontext=createContext();
 
     const projects=[
         {
-            img:"https://images.unsplash.com/photo-1622630998477-20aa696ecb05?q=80&w=1246&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title:"Application number1",
-            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
-            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+            img:Project1,
+            title:"Notes Taking",
+            desc:"A responsive notes-taking app built with React and Tailwind CSS, allowing users to create, edit, delete, and manage notes with a clean, intuitive, and user-friendly interface.",
+            deploy:"https://refresh-react-seven.vercel.app/"
         },
          {
-            img:"https://plus.unsplash.com/premium_photo-1675055730251-9f3990f1f9d5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title:"Application number1",
-            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
-            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+            img:project2,
+            title:"Your Gallery",
+            desc:"A React-based application that fetches data from an API and displays it through a clean, responsive, and user-friendly interface designed with modern UI principles.",
+            deploy:"https://refresh-react-z5rc.vercel.app/"
         },
         {
-            img:"https://images.unsplash.com/photo-1622630998477-20aa696ecb05?q=80&w=1246&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title:"Application number1",
-            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
-            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+            img:project3,
+            title:"ReactUi",
+            desc:"A React-based UI application focused on building clean, responsive, and reusable components, showcasing modern design practices, smooth layouts, and an intuitive user experience.",
+            deploy:"https://ui-react-sigma.vercel.app/"
         },
          {
-            img:"https://plus.unsplash.com/premium_photo-1675055730251-9f3990f1f9d5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            title:"Application number1",
-            desc:"lorem apple, river, cloud, pencil, horizon, mirror, lantern, forest, whisper, rocket, velvet, compass, thunder, mosaic, candle, glacier, notebook, shadow, breeze, marble, sunflower, ladder, comet, window, island, guitar, echo, blanket, crystal, orbit",
-            deploy:"https://www.linkedin.com/in/abhishek-kumar1226/"
+            img:project4,
+            title:"Buy from API",
+            desc:"A React-based shopping application that fetches product data from an API and transforms it into a clean, responsive, and user-friendly shopping interface.t",
+            deploy:"https://fake-api-e-commerce-zeta.vercel.app/"
         }
     ]
 

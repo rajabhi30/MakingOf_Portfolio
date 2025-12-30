@@ -14,9 +14,11 @@ const Oddpro = (props) => {
                 <h4 className='text-3xl font-bold'>{0}{props.num+1}</h4>
                 <h3 className='text-2xl font-bold mt-1'>{props.title}</h3>
                 <p className='text-sm mt-5'>{props.desc}</p>
-                <button className='w-8 h-8 flex justify-center items-center border  hover:bg-white hover:text-black rounded-md mt-5'>
-                  <i class="ri-arrow-left-up-box-fill"></i>
+                 <a href={props.link} target='/'>
+                    <button className='w-8 h-8 flex justify-center items-center border  hover:bg-white hover:text-black rounded-md mt-5'>
+                  <i class="ri-arrow-right-up-box-fill"></i>
                  </button>
+                </a>
             </div>
         </div>
     )
