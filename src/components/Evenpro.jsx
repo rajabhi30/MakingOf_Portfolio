@@ -16,7 +16,7 @@ const Evenpro = (props) => {
 
             </div>
             <div className='w-[40%] h-[250px] overflow-hidden rounded-xl'>
-                <img className=""
+                <img 
                     src={props.img}
                     alt=""
                     className='w-full h-full object-cover'

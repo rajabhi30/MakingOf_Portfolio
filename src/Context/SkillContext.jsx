@@ -1,4 +1,5 @@
 import React, { Children, createContext } from 'react'
+// eslint-disable-next-line react-refresh/only-export-components
 export const scontext=createContext();
 import Project1 from '../assets/Project1.png'
 import project2 from '../assets/Project2.png'
