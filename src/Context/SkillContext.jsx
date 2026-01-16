@@ -1,10 +1,10 @@
 import React, { Children, createContext } from 'react'
 // eslint-disable-next-line react-refresh/only-export-components
 export const scontext=createContext();
-import Project1 from '../assets/Project1.png'
-import project2 from '../assets/Project2.png'
-import project3 from '../assets/Project3.png'
-import project4 from '../assets/Project4.png'
+import project1 from '../assets/project1.png'
+import project2 from '../assets/project2.png'
+import project3 from '../assets/project3.png'
+import project4 from '../assets/project4.png'
 
 
  const skills=[
@@ -75,7 +75,7 @@ import project4 from '../assets/Project4.png'
 
     const projects=[
         {
-            img:Project1,
+            img:project1,
             title:"Notes Taking",
             desc:"A responsive notes-taking app built with React and Tailwind CSS, allowing users to create, edit, delete, and manage notes with a clean, intuitive, and user-friendly interface.",
             deploy:"https://refresh-react-seven.vercel.app/"
