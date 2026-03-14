@@ -4,16 +4,18 @@ import { scontext } from '../Context/SkillContext'
 
 const Section2 = () => {
 
-  const { skills, experience } = useContext(scontext)
+  const { skills } = useContext(scontext)
 
   return (
-    <div className="h-screen py-5 px-14" id="skill">
+    <div className="w-full py-12 px-6 md:px-14" id="skill">
 
-      <div className="flex justify-center text-4xl gap-3">
+      {/* Heading */}
+      <div className="flex justify-center text-3xl md:text-4xl gap-2">
         My <span className="font-bold">Skills</span>
       </div>
 
-      <div className="flex flex-wrap gap-14 mt-18 ml-13">
+      {/* Skills Grid */}
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-12">
         {skills.map((sk, idx) => (
           <SkillCard
             key={idx}

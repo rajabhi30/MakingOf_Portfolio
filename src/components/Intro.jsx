@@ -1,46 +1,61 @@
 import React from 'react'
 import Image1 from '../assets/Image1.png'
+
 const Intro = () => {
   return (
-    <div className='flex w-full'>
+    <div className='flex flex-col md:flex-row w-full min-h-screen items-center justify-center px-6 md:px-16'>
 
-        <div className='h-116 w-[50%] py-5 px-14'>
+      {/* Left Section */}
+      <div className='w-full md:w-1/2 text-center md:text-left'>
 
-           <div className='mt-25 space-y-1.5'>
-            <h1 className='text-5xl'>Hello I'am <span className='font-bold'>Abhishek.</span></h1>
-            <h1 className='text-5xl'><span className='font-bold'>Frontend</span> Developer</h1>
-            <h1 className='text-5xl'>Based in <span className='font-bold'>India.</span></h1>
-           </div>
+        <div className='space-y-3'>
+          <h1 className='text-3xl md:text-5xl'>
+            Hello I'am <span className='font-bold'>Abhishek.</span>
+          </h1>
 
-             <div className='flex gap-5 relative top-25'>
-                <a href="https://github.com/rajabhi30" target='_blank'>
-                  <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
-                    <i class="ri-github-fill"></i>
-                 </div>
-                </a>
-                 <a href="https://www.linkedin.com/in/abhishek-kumar1226/" target='_blank'>
-                  <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
-                    <i class="ri-linkedin-box-fill"></i>
-                 </div>
-                 </a>
-                <a href="mailto:rajabhishek8070@gmail.com">
-                   <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
-                    <i class="ri-mail-fill"></i>
-                 </div>
-                </a>
-                 <a href="https://wa.me/8709291785" target='_blank' rel="noopener noreferrer">
-                  <div className='w-10 h-10 flex justify-center items-center border  hover:bg-black hover:text-white rounded-md'>
-                   <i class="ri-whatsapp-fill"></i>
-                 </div>
-                 </a>
-             </div>
-    
-         </div>
+          <h1 className='text-3xl md:text-5xl'>
+            <span className='font-bold'>Frontend</span> Developer
+          </h1>
 
-         
-        <div className='h-116 w-[50%] overflow-hidden flex justify-center items-center'>
-            <img src={Image1} alt="" className='w-[70%] ml-20'/>
+          <h1 className='text-3xl md:text-5xl'>
+            Based in <span className='font-bold'>India.</span>
+          </h1>
         </div>
+
+        {/* Social Icons */}
+        <div className='flex justify-center md:justify-start gap-5 mt-8'>
+
+          <a href="https://github.com/rajabhi30" target='_blank' rel="noreferrer">
+            <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+              <i className="ri-github-fill"></i>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/abhishek-kumar1226/" target='_blank' rel="noreferrer">
+            <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+              <i className="ri-linkedin-box-fill"></i>
+            </div>
+          </a>
+
+          <a href="mailto:rajabhishek8070@gmail.com">
+            <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+              <i className="ri-mail-fill"></i>
+            </div>
+          </a>
+
+          <a href="https://wa.me/8709291785" target='_blank' rel="noopener noreferrer">
+            <div className='w-10 h-10 flex justify-center items-center border hover:bg-black hover:text-white rounded-md'>
+              <i className="ri-whatsapp-fill"></i>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      {/* Right Section */}
+      <div className='w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0 '>
+        <img src={Image1} alt="profile" className='w-[70%] md:w-[75%]' />
+      </div>
 
     </div>
   )

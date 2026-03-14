@@ -31,14 +31,15 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full h-screen flex flex-col items-center px-14 py-10 bg-black text-white'>
+    <div className='w-full min-h-screen flex flex-col items-center px-5 md:px-14 py-10 bg-black text-white'>
 
-      <h4 className='text-4xl font-bold'>Contact Me</h4>
+      <h4 className='text-3xl md:text-4xl font-bold text-center'>Contact Me</h4>
 
-      <div className='border-2 w-[50%] p-10 bg-white text-black rounded-md mt-6'>
+      <div className='border-2 w-full md:w-[70%] lg:w-[50%] p-6 md:p-10 bg-white text-black rounded-md mt-6'>
+
         <form onSubmit={onSubmit}>
 
-          <div className='flex flex-col mb-3 font-bold'>
+          <div className='flex flex-col mb-4 font-bold'>
             <label>Name</label>
             <input
               type="text"
@@ -50,7 +51,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className='flex flex-col mb-3 font-bold'>
+          <div className='flex flex-col mb-4 font-bold'>
             <label>Email</label>
             <input
               type="email"
@@ -62,10 +63,11 @@ const Contact = () => {
             />
           </div>
 
-          <div className='flex flex-col mb-3 font-bold'>
+          <div className='flex flex-col mb-4 font-bold'>
             <label>Message</label>
             <textarea
               name="message"
+              rows="4"
               value={messsage}
               onChange={(e) => setmessage(e.target.value)}
               className='border p-2 rounded-md font-normal'
@@ -75,11 +77,12 @@ const Contact = () => {
 
           <button
             type="submit"
-            className='px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-600'>
+            className='w-full md:w-auto px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-600 transition'>
             Send Message
           </button>
 
         </form>
+
       </div>
     </div>
   )
