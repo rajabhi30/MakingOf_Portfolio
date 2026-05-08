@@ -14,7 +14,7 @@ const Intro = () => {
           </h1>
 
           <h1 className='text-2xl sm:text-3xl md:text-5xl'>
-            <span className='font-bold'>Frontend</span> Developer
+            <span className='font-bold'>MERN</span> Developer
           </h1>
 
           <h1 className='text-2xl sm:text-3xl md:text-5xl'>

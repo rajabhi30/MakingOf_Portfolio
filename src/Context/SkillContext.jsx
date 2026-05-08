@@ -14,6 +14,18 @@ const skills = [
     logo: <i className="ri-reactjs-line"></i>,
   },
   {
+    name: "Node",
+    logo: <i class="ri-nodejs-line"></i>
+  },
+   {
+    name: "Express",
+    logo: <i class="ri-npmjs-fill"></i>,
+  },
+   {
+    name: "MongoDB",
+    logo: <i class="ri-database-2-fill"></i>,
+  },
+   {
     name: "Javascript",
     logo: <i className="ri-javascript-fill"></i>,
   },
@@ -45,7 +57,7 @@ const skills = [
 
 const experience = [
   {
-    img: "https://play-lh.googleusercontent.com/LaW7m98oE5v_a3nTk4v-4GCM-1viyvxtG1IQK2BEpaM07U8r_vN7eiD68rb2Nn1udkU",
+    img: "https://media.licdn.com/dms/image/v2/C510BAQEgcV3sgE1PIA/company-logo_200_200/company-logo_200_200/0/1630568405733/cantilever_labs_logo?e=2147483647&v=beta&t=EQdzDxNW7uP5vn1bCa3Bq9UXCejCYaLOO1Bt2m9K-Jw",
     Title: "Data Structures and Algorithms (DSA) Training - CipherSchools",
     Date: "May 2025 - July 2025",
     Details:
@@ -59,7 +71,7 @@ const experience = [
       "Completed MERN stack training at Cantilever Labs, learning MongoDB, Express.js, React.js, and Node.js, with hands-on projects, RESTful APIs, authentication, and full-stack application development using modern web technologies.",
   },
   {
-    img: "https://media.licdn.com/dms/image/v2/D560BAQGlMH9zNrwO0A/company-logo_200_200/company-logo_200_200/0/1723708435329/gokborutech22_logo?e=2147483647&v=beta&t=1yb1s7Ivr09goYG0Cd3ZgB7twrL8E9_LzWeSEq18MOc",
+    img: "https://media.licdn.com/dms/image/v2/C510BAQEgcV3sgE1PIA/company-logo_200_200/company-logo_200_200/0/1630568405733/cantilever_labs_logo?e=2147483647&v=beta&t=EQdzDxNW7uP5vn1bCa3Bq9UXCejCYaLOO1Bt2m9K-Jw",
     Title: "Modern Frontend Development Program — Gokboru",
     Date: "June 2024 - July 2024",
     Details:
