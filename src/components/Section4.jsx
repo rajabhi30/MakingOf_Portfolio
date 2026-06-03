@@ -7,9 +7,9 @@ const Section4 = () => {
 
       {/* Image */}
       <div className='w-full md:w-[45%] flex justify-center mb-10 md:mb-0'>
-        <img 
-          src={about} 
-          alt="About" 
+        <img
+          src={about}
+          alt="About"
           className='w-[80%] md:w-[90%] max-w-md'
         />
       </div>
@@ -22,19 +22,23 @@ const Section4 = () => {
         </div>
 
         <p className='text-sm md:text-base mt-6 text-gray-500 leading-relaxed'>
-          I am a passionate software developer with a strong foundation in data 
-          structures, algorithms, and modern web development. I have completed 
-          hands-on training in DSA from CipherSchools, MERN stack development 
-          from Cantilever Labs, and frontend development from Gokboru. I enjoy 
-          building clean, responsive, and user-friendly web applications using 
-          React, JavaScript, and Tailwind CSS.
+          I am a full-stack software developer with a strong foundation in data structures
+          and algorithms, currently focused on building efficient and scalable web applications.
+          I have hands-on experience working with the MERN stack (MongoDB, Express.js, React,
+          Node.js), enabling me to develop complete end-to-end solutions.
 
-          <br/><br/>
+          <br /><br />
 
-          I actively solve coding problems to strengthen my logical thinking and 
-          problem-solving skills. I am always eager to learn new technologies, 
-          improve my communication skills, and grow as a developer by working on 
-          real-world projects and collaborative environments.
+          On the frontend, I specialize in creating responsive and intuitive user interfaces
+          using React, JavaScript, and Tailwind CSS. On the backend, I design and develop
+          RESTful APIs, manage databases, and implement robust server-side logic to ensure
+          performance and reliability.
+
+          <br /><br />
+
+          I consistently strengthen my problem-solving abilities through regular practice of
+          DSA and actively seek opportunities to apply my skills in real-world projects and
+          collaborative environments. I am committed to continuous learning and professional growth.
         </p>
 
       </div>
