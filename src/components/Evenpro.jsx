@@ -2,37 +2,40 @@ import React from 'react'
 
 const Evenpro = ({ num, title, desc, link, img }) => {
   return (
-    <div className='flex flex-col md:flex-row px-6 md:px-20 lg:px-40 py-8 w-full gap-8 items-center'>
+    <div className='glass-panel rounded-3xl flex flex-col md:flex-row p-6 md:p-8 w-full gap-8 items-center group relative overflow-hidden'>
+
+      {/* Hover Glow */}
+      <div className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/0 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 pointer-events-none"></div>
 
       {/* Text Section */}
-      <div className='w-full md:w-[60%]'>
+      <div className='w-full md:w-[50%] z-10 pl-4 md:pl-10'>
 
-        <h4 className='text-2xl md:text-3xl font-bold'>
+        <h4 className='text-4xl md:text-5xl font-light text-zinc-600 mb-4'>
           {String(num + 1).padStart(2, "0")}
         </h4>
 
-        <h3 className='text-xl md:text-2xl font-bold mt-2'>
+        <h3 className='text-3xl md:text-4xl font-bold text-white tracking-tight mb-6'>
           {title}
         </h3>
 
-        <p className='text-sm md:text-base mt-4 text-gray-600'>
+        <p className='text-base md:text-lg text-zinc-400 leading-relaxed mb-8'>
           {desc}
         </p>
 
         <a href={link} target='_blank' rel="noopener noreferrer">
-          <button className='w-9 h-9 flex justify-center items-center border hover:bg-black hover:text-white rounded-md mt-5 transition'>
-            <i className="ri-arrow-right-up-box-fill"></i>
+          <button className='w-12 h-12 flex justify-center items-center rounded-full glass-panel text-white hover:text-red-400 hover:border-red-400/50 transition-all duration-300'>
+            <i className="ri-arrow-right-up-line text-xl"></i>
           </button>
         </a>
 
       </div>
 
       {/* Image Section */}
-      <div className='w-full md:w-[40%] h-[200px] md:h-[250px] overflow-hidden rounded-xl'>
+      <div className='w-full md:w-[50%] h-[250px] md:h-[350px] overflow-hidden rounded-2xl z-10 shadow-2xl'>
         <img
           src={img}
           alt="project"
-          className='w-full h-full object-cover'
+          className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out'
         />
       </div>
 

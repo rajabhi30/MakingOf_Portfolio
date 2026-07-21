@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/Logo.png'
+
 import { Link } from 'react-router-dom'
 
 const Nav1 = () => {
@@ -7,45 +7,42 @@ const Nav1 = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className='py-5 px-6 md:px-14 flex justify-between items-center'>
+    <div className='flex justify-center w-full fixed top-6 z-50 px-4'>
+      <div className='flex items-center justify-center bg-black/60 backdrop-blur-xl border border-white/10 rounded-full px-6 py-4 w-full max-w-5xl shadow-2xl relative'>
 
-      {/* Logo */}
-      <div>
-        <img className='w-12 md:w-15' src={Logo} alt="Logo" />
-      </div>
+        {/* Desktop Menu */}
+        <div className='hidden md:flex items-center gap-8 font-medium text-sm text-zinc-400'>
+          <a href="#me" className='hover:text-white transition-colors duration-300'>About Me</a>
+          <a href="#skill" className='hover:text-white transition-colors duration-300'>Skills</a>
+          <a href="#project" className='hover:text-white transition-colors duration-300'>Projects</a>
+          <Link to="/Contact" className='hover:text-white transition-colors duration-300'>Contact</Link>
+        </div>
 
-      {/* Desktop Menu */}
-      <div className='hidden md:flex gap-10 font-semibold text-base'>
-        <a href="#me" className='cursor-pointer'>About Me</a>
-        <a href="#skill" className='cursor-pointer'>Skills</a>
-        <a href="#project" className='cursor-pointer'>Project</a>
-        <Link to="/Contact">Contact</Link>
-      </div>
-
-      {/* Resume Button */}
-      <div className='hidden md:block'>
-        <a href="/Abhishek(cv).pdf" download>
-          <button className='text-base font-bold bg-black px-4 py-2 rounded hover:bg-gray-700 text-white'>
-            Resume <span className='ml-1'><i className="ri-folder-download-line"></i></span>
-          </button>
-        </a>
-      </div>
+        {/* Resume Button */}
+        <div className='hidden md:block absolute right-3'>
+          <a href="/Abhishek(cv).pdf" download>
+            <button className='text-sm font-semibold tracking-wide bg-white text-black px-6 py-2.5 rounded-full hover:bg-zinc-200 transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]'>
+              Resume <i className="ri-download-line ml-1"></i>
+            </button>
+          </a>
+        </div>
 
       {/* Hamburger */}
-      <div className='md:hidden text-2xl cursor-pointer' onClick={() => setMenuOpen(!menuOpen)}>
-        <i className="ri-menu-line"></i>
+      <div className='md:hidden w-full flex justify-end text-2xl cursor-pointer text-white' onClick={() => setMenuOpen(!menuOpen)}>
+        <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
+      </div>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className='absolute top-20 left-0 w-full bg-black text-white flex flex-col items-center gap-6 py-6 md:hidden font-semibold' >
-          <a href="#me">About Me</a>
-          <a href="#skill">Skills</a>
-          <a href="#project">Project</a>
-          <Link to="/Contact">Contact</Link>
+        <div className='absolute top-24 left-4 right-4 bg-black/90 backdrop-blur-xl text-white flex flex-col items-center gap-6 py-8 md:hidden font-medium border border-white/10 rounded-2xl shadow-2xl z-40' >
+          <a href="#me" className='hover:text-zinc-400' onClick={() => setMenuOpen(false)}>About Me</a>
+          <a href="#skill" className='hover:text-zinc-400' onClick={() => setMenuOpen(false)}>Skills</a>
+          <a href="#project" className='hover:text-zinc-400' onClick={() => setMenuOpen(false)}>Projects</a>
+          <Link to="/Contact" className='hover:text-zinc-400' onClick={() => setMenuOpen(false)}>Contact</Link>
 
           <a href="/Abhishek(cv).pdf" download>
-            <button className='font-bold bg-black px-4 py-2 rounded'>
+            <button className='text-sm font-semibold tracking-wide bg-white text-black px-8 py-3 rounded-full'>
               Resume
             </button>
           </a>

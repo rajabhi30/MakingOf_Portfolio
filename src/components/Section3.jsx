@@ -7,11 +7,14 @@ const Section3 = () => {
   const { experience } = useContext(scontext)
 
   return (
-    <div className="bg-black w-full py-12 px-6 md:px-14 flex flex-col items-center">
+    <div className="relative w-full max-w-7xl mx-auto px-6 md:px-16 py-32 flex flex-col items-center z-10">
 
       {/* Heading */}
-      <div className="flex justify-center text-3xl md:text-4xl gap-2 text-white">
-        My <span className="font-bold">Trainings</span>
+      <div className="flex flex-col items-center">
+        <div className='section-tag'>My Background</div>
+        <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-white mb-16">
+          Education & <span className="font-bold text-gradient-red">Trainings</span>
+        </h2>
       </div>
 
       {/* Experience List */}

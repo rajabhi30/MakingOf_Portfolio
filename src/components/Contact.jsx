@@ -31,54 +31,63 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full min-h-screen flex flex-col items-center px-5 md:px-14 py-10 bg-black text-white'>
+    <div className='relative w-full max-w-7xl mx-auto px-6 md:px-16 py-32 flex flex-col items-center min-h-screen' id="contact">
 
-      <h4 className='text-3xl md:text-4xl font-bold text-center'>Contact Me</h4>
+      {/* Heading */}
+      <div className="flex flex-col items-center">
+        <div className='section-tag'>Get In Touch</div>
+        <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-white mb-16">
+          Let's <span className="font-bold text-gradient-red">Connect</span>
+        </h2>
+      </div>
 
-      <div className='border-2 w-full md:w-[70%] lg:w-[50%] p-6 md:p-10 bg-white text-black rounded-md mt-6'>
+      <div className='glass-panel w-full md:w-[70%] lg:w-[60%] p-8 md:p-14 rounded-3xl relative z-10'>
 
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='flex flex-col gap-8'>
 
-          <div className='flex flex-col mb-4 font-bold'>
-            <label>Name</label>
+          <div className='flex flex-col group'>
+            <label className='text-sm font-semibold text-zinc-400 mb-2 uppercase tracking-widest group-focus-within:text-red-400 transition-colors'>Name</label>
             <input
               type="text"
               name="name"
               value={name}
               onChange={(e) => setname(e.target.value)}
-              className='border p-2 rounded-md font-normal'
+              className='modern-input p-4 rounded-xl text-lg'
+              placeholder='John Doe'
               required
             />
           </div>
 
-          <div className='flex flex-col mb-4 font-bold'>
-            <label>Email</label>
+          <div className='flex flex-col group'>
+            <label className='text-sm font-semibold text-zinc-400 mb-2 uppercase tracking-widest group-focus-within:text-red-400 transition-colors'>Email</label>
             <input
               type="email"
               name="email"
               value={mail}
               onChange={(e) => setmail(e.target.value)}
-              className='border p-2 rounded-md font-normal'
+              className='modern-input p-4 rounded-xl text-lg'
+              placeholder='john@example.com'
               required
             />
           </div>
 
-          <div className='flex flex-col mb-4 font-bold'>
-            <label>Message</label>
+          <div className='flex flex-col group'>
+            <label className='text-sm font-semibold text-zinc-400 mb-2 uppercase tracking-widest group-focus-within:text-red-400 transition-colors'>Message</label>
             <textarea
               name="message"
-              rows="4"
+              rows="5"
               value={messsage}
               onChange={(e) => setmessage(e.target.value)}
-              className='border p-2 rounded-md font-normal'
+              className='modern-input p-4 rounded-xl text-lg resize-none'
+              placeholder='Tell me about your project...'
               required
             />
           </div>
 
           <button
             type="submit"
-            className='w-full md:w-auto px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-600 transition'>
-            Send Message
+            className='w-full md:w-auto self-end px-10 py-4 rounded-full font-bold btn-modern-dark tracking-wide text-lg mt-4'>
+            Send Message <i className="ri-send-plane-fill ml-2"></i>
           </button>
 
         </form>

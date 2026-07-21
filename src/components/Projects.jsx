@@ -8,11 +8,14 @@ const Projects = () => {
   const { projects } = useContext(scontext)
 
   return (
-    <div className='bg-black w-full text-white flex flex-col items-center py-12 px-6 md:px-14' id="project">
+    <div className='relative w-full max-w-7xl mx-auto px-6 md:px-16 py-32 flex flex-col items-center' id="project">
 
       {/* Heading */}
-      <div className='text-3xl md:text-4xl'>
-        My <span className='font-bold'>Projects</span>
+      <div className="flex flex-col items-center">
+        <div className='section-tag'>My Work</div>
+        <h2 className="text-4xl md:text-6xl font-light tracking-tighter text-white mb-16">
+          Featured <span className="font-bold text-gradient-red">Projects</span>
+        </h2>
       </div>
 
       {/* Projects */}
